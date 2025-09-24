@@ -1,14 +1,17 @@
-import { NonRetriableError } from "@inngest/node";
-import inngest from "../client";
-import User from "../models/User";
-import { sendMail } from "../../utils/mailer";
+import { NonRetriableError } from "inngest";
+import inngest from "../client.js";
+import User from "../../models/User.model.js";
+import { sendMail } from "../../utils/mailer.js";
 
 export const onUserSignup = inngest.createFunction(
     {
         id: "On User Signup",
-        retries: 2,
-        event: "user/signup",
-        fn: async ({ event, step }) => {
+        retries: 2
+    },
+    {
+        event: "user/signup"
+    },
+    async ({ event, step }) => {
             try {
                 const { email } = event.data;
                 const user = await step.run("get-user-email", async () => {
@@ -36,5 +39,4 @@ export const onUserSignup = inngest.createFunction(
                 };
             }
         }
-    }
 );

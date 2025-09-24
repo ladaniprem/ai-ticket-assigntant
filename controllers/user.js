@@ -1,9 +1,7 @@
-import bcrypt from 'bcryptjs';
+import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import User from '../models/User.js';
-import { Inngest } from '../inngest/client.js';
-import { errorMonitor } from 'nodemailer/lib/xoauth2/index.js';
-import { err } from 'inngest/types';
+import User from '../models/User.model.js';
+import inngest from '../inngest/client.js';
 
 export const signup = async(req,res) => {
     const {email,password,skills = []} = req.body

@@ -1,4 +1,3 @@
-import { type } from "express/lib/response";
 import mongoose from "mongoose";
 
 const ticketSchema = new mongoose.Schema({
@@ -6,7 +5,7 @@ const ticketSchema = new mongoose.Schema({
         type: String,
         required: true,
       },
-      decription: {
+      description: {
         type : String,
         required: true,
       },
