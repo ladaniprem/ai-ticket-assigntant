@@ -3,6 +3,32 @@ logs
 *.log
 npm-debug.log*
 yarn-debug.log*
+<<<<<<< HEAD
+yarn-error.log*
+=======
+<<<<<<< HEAD
+>>>>>>> 7b33ab5 (feat: initialize frontend project with React, Vite, and Tailwind CSS)
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+<<<<<<< HEAD
+=======
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+=======
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
@@ -17,8 +43,13 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .DS_Store
+>>>>>>> 7b33ab5 (feat: initialize frontend project with React, Vite, and Tailwind CSS)
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
+=======
+>>>>>>> 8ef83b4 (feat: initialize frontend project with React, Vite, and Tailwind CSS)
+>>>>>>> 7b33ab5 (feat: initialize frontend project with React, Vite, and Tailwind CSS)
